@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Office Officer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Business App / Retail Portal UserID Status Manager</h1>
+        <div id="loginForm" style="display: block;">
+            <input type="text" id="usernameInput" placeholder="Username">
+            <input type="password" id="passwordInput" placeholder="Password">
+            <button id="loginBtn">Sign In</button>
+            <div id="loginMessage" class="operation-message" style="display:none;"></div>
+        </div>
+
+        <div id="statusSection" style="display:none;">
+            <input type="text" id="customerUsername" placeholder="Enter Customer Username">
+            <button id="checkStatusBtn">Check Status</button>
+
+            <div id="statusDisplay" class="status-display" style="display:none;">
+                <h2>Status: <span id="status"></span></h2>
+                <div id="action"></div>
+                <div id="calendar" class="calendar" style="display:none;">
+                    <label for="extendDate">Select New Expiry Date:</label>
+                    <input type="date" id="extendDate" min="" max="">
+                    <button id="confirmExtendBtn">Extend Expiry</button>
+                </div>
+                <div id="operationMessage" class="operation-message" style="display:none;"></div>
+            </div>
+
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
